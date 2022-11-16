@@ -13,8 +13,8 @@
         <img width="80px" height="80px" src="images/trybewarts-header-logo.svg" alt="" srcset="">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login">
-            <input class="form-control" type="text" placeholder="Login" name="user" id="">
-            <input class="form-control" type="password" placeholder="Senha" name="senha" id="">
+            <input class="form-control" type="text" placeholder="Login" name="user">
+            <input class="form-control" type="password" placeholder="Senha" name="senha">
             <input class="btn btn-primary" type="submit" value="Entrar">
         </form>
     </header>
@@ -121,8 +121,9 @@
                 </fieldset>
                 <hr>
                 <fieldset class="comment-container">
-                    <legend>Deixe seu comentário: </legend>
-                    <textarea maxlength="500" name="" id="" cols="75" rows="10"></textarea>
+                    <label class="textarea" for="textarea">Deixe seu comentário: </legend>
+                    <textarea name="textarea" maxlength="500" cols="75" rows="10"></textarea>
+                    <p id="counter">Caracteres restantes: 500/500</p>
                 </fieldset>
                 <hr>
                 <fieldset>
@@ -134,8 +135,7 @@
                     <input disabled type="submit" class="btn btn-outline-success" id="submit-btn" value="Enviar"> 
                 </fieldset>
             </form>
-            <img class="trybewarts-forms-logo"src="images/trybewarts-colored.svg/" height="500px" alt="" srcset="">
-            <div class="bloco"></div>
+            <img class="trybewarts-forms-logo"src="images/trybewarts-colored.svg" height="500px" alt="" srcset="">
         </section>
     </main>
     <footer><h3>Direitos reservados à Trybewarts©</h3></footer>
