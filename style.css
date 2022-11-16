@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #32a791;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#evaluation-form{
+    display: flex;
+    flex-direction: column;
+    width: 675px;
+}
+.form-control{
+    width: 40%;
+}
+h1{
+    color: white;
+}
+.trybewarts-login{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.trybewarts-login > .form-control{
+    width: 25%;
+}
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+fieldset{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+legend{
+    font-size: 14px;
+}
+.select{
+    width: 33%;
+}
+
+.family{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.tecnology{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.tecnology > div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 20px;
+}
+.rate-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.rate-container legend{
+    display: flex;
+    justify-content: space-between;
+}
+.rate-container > label{
+    padding: 0 10px 0 10px;
+}
+#label-rate{
+    display: flex;
+}
+.btn-outline-success{
+    width: 200px;
+    height: 50px;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+.bloco{
+    width: 400px;
+    height: 400px;
+    background: blue;
+}
