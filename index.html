@@ -9,13 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img width="80px" height="80px" src="images/trybewarts-header-logo.svg" alt="" srcset="">
+    <header class="header">
+        <img class="trybewarts-header-logo" width="80px" height="80px" src="images/trybewarts-header-logo.svg" alt="" srcset="">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login">
-            <input class="form-control" type="text" placeholder="Login" name="user">
-            <input class="form-control" type="password" placeholder="Senha" name="senha">
-            <input class="btn btn-primary" type="submit" value="Entrar">
+            <input class="form-control" type="email" placeholder="Email" name="email">
+            <input class="form-control" type="password" placeholder="Senha" name="password">
+            <button class="btn btn-primary" type="submit">Entrar</button>
         </form>
     </header>
     <main>
@@ -27,16 +27,16 @@
                     <input placeholder="Email" class="form-control" type="email" name="email" id="input-email">
                     <label id="house" class="form-label" for="houses">Casa: </label>
                     <select id="house" class="form-control select" name="houses" id="">
-                        <option id="gitnoria-house" value="gitnoria">Gitnória</option>
-                        <option id="reactpuff-house" value="reactpuff">Reactpuff</option>
-                        <option id="corvinode-house" value="corvinode">Corvinode</option>
-                        <option id="pytherina-house" value="pytherina">Pytherina</option>
+                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
                     </select>
                 </fieldset>
                 <hr>
                 <div class="form-container">
                     <fieldset class="family">
-                        <legend id="label-family">Qual sua familía?</legend>
+                        <legend id="label-family">Qual sua família?</legend>
                         <label class="form-label" for="front">
                             <input value="Frontend" type="radio" name="family" id="front">
                             Familía front-end
@@ -54,29 +54,29 @@
                         <legend id="label-content">Qual conteúdo você está com mais vontade de aprender?</legend>
                         <div>
                             <label class="form-label" for="Higher Order Functions">
-                                <input class="subject" type="checkbox" name="HoFs"> HoFs
+                                <input class="subject" type="checkbox" value="HoFs" name="HoFs"> HoFs
                             </label>
                             <label class="form-label" for="Jest">
-                                <input class="subject" type="checkbox" name="Jest"> Jest
+                                <input class="subject" type="checkbox" value="Jest" name="Jest"> Jest
                             </label>
                             <label class="form-label" for="Promises">
-                                <input class="subject" type="checkbox" name="Promises"> Promises
+                                <input class="subject" type="checkbox" value="Promises" name="Promises"> Promises
                             </label>
                             <label class="form-label" for="React">
-                                <input class="subject" type="checkbox" name="React"> React
+                                <input class="subject" type="checkbox" value="React" name="React"> React
                             </label>
                             <label class="form-label" for="SQL">
-                                <input class="subject" type="checkbox" name="SQL"> SQL
+                                <input class="subject" type="checkbox" value="SQL" name="SQL"> SQL
                             </label>
                             <label class="form-label" for="Python">
-                                <input class="subject" type="checkbox" name="Python"> Python
+                                <input class="subject" type="checkbox" value="Python" name="Python"> Python
                             </label>
                         </div>
                     </fieldset>
                 </div>
                 <hr>
                 <fieldset class="rate-container">
-                    <legend>Como você avalia a Trybewarts?
+                    <legend id="label-rate">Como você avalia a Trybewarts?
                     <label id="label-rate" class="form-label" for="1">
                         <input value="1" type="radio" name="rate" >
                         1
@@ -122,7 +122,7 @@
                 <hr>
                 <fieldset class="comment-container">
                     <label class="textarea" for="textarea">Deixe seu comentário: </legend>
-                    <textarea name="textarea" maxlength="500" cols="75" rows="10"></textarea>
+                    <textarea id="textarea" name="textarea" maxlength="500" cols="75" rows="10"></textarea>
                     <p id="counter">Caracteres restantes: 500/500</p>
                 </fieldset>
                 <hr>
@@ -132,10 +132,10 @@
                     </label>
                 </fieldset>
                 <fieldset class="btn-container">
-                    <input disabled type="submit" class="btn btn-outline-success" id="submit-btn" value="Enviar"> 
+                    <button disabled type="submit" class="btn btn-outline-success" id="submit-btn" value="Enviar">Enviar</button>
                 </fieldset>
             </form>
-            <img class="trybewarts-forms-logo"src="images/trybewarts-colored.svg" height="500px" alt="" srcset="">
+            <img id="trybewarts-forms-logo"src="images/trybewarts-colored.svg" height="500px" alt="" srcset="">
         </section>
     </main>
     <footer><h3>Direitos reservados à Trybewarts©</h3></footer>
